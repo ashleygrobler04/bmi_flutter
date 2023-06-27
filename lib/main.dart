@@ -73,19 +73,22 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text("BMI: $bmi"),
             Text("Status: $status"),
-            DropdownButton(
-              items: list.map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              }).toList(),
-              onChanged: (String? value) {
-                setState(() {
-                  dropdownValue = value!;
-                });
-              },
-              value: dropdownValue,
+            Semantics(
+              label: "Unit selection:",
+              child: DropdownButton(
+                items: list.map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                onChanged: (String? value) {
+                  setState(() {
+                    dropdownValue = value!;
+                  });
+                },
+                value: dropdownValue,
+              ),
             ),
             Semantics(
               textField: true,
