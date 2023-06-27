@@ -91,8 +91,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Semantics(
-              value:
-                  "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}",
               hint:
                   "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}",
               label:
@@ -109,8 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Semantics(
-              value:
-                  "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}",
               hint:
                   "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}",
               label:
