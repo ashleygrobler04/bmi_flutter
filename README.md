@@ -1,16 +1,11 @@
 # bmi_flutter
 
-A new Flutter project.
+A BMI calculator written in flutter.
 
-## Getting Started
+## usage
 
-This project is a starting point for a Flutter application.
+Clone the project and run it like you normaly run a flutter project. You should see an interface with some text widgets and a few text fields and buttons. Select your measurement units in the dropdown button, enter your data in the required fields then click the calculate button. 2 text fields should update with your BMI and another showing if your weight is healthy, over weight, under weight or obese or what ever the case might be.
 
-A few resources to get you started if this is your first Flutter project:
+### Thanks for using
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Thanks for using this program. If there are any errors, open an issue and let me know.
