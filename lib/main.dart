@@ -97,8 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}",
               child: TextField(
                 decoration: InputDecoration(
-                    labelText:
-                        "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}"),
+                    label: Text(
+                        "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}")),
                 onChanged: (value) => {
                   setState(() {
                     weightInput = value;
@@ -113,8 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}",
               child: TextField(
                 decoration: InputDecoration(
-                    labelText:
-                        "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}"),
+                    label: Text(
+                        "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}")),
                 onChanged: (value) => {
                   setState(() {
                     heightInput = value;
@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
             ),
-            TextButton(onPressed: handlePress, child: Text("Calculate BMI"))
+            TextButton(onPressed: handlePress, child: Text("Calculate BMI")),
           ],
         ),
       ),
