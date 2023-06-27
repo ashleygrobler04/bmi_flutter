@@ -87,25 +87,35 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               value: dropdownValue,
             ),
-            TextField(
-              decoration: InputDecoration(
-                  labelText:
-                      "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}"),
-              onChanged: (value) => {
-                setState(() {
-                  weightInput = value;
-                })
-              },
+            Semantics(
+              textField: true,
+              label:
+                  "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}",
+              child: TextField(
+                decoration: InputDecoration(
+                    labelText:
+                        "Enter weight in ${(dropdownValue == 'Metric') ? 'Killograms' : 'Pounds'}"),
+                onChanged: (value) => {
+                  setState(() {
+                    weightInput = value;
+                  })
+                },
+              ),
             ),
-            TextField(
-              decoration: InputDecoration(
-                  labelText:
-                      "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}"),
-              onChanged: (value) => {
-                setState(() {
-                  heightInput = value;
-                })
-              },
+            Semantics(
+              textField: true,
+              label:
+                  "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}",
+              child: TextField(
+                decoration: InputDecoration(
+                    labelText:
+                        "Enter height in ${(dropdownValue == 'Metric') ? 'Centimeters' : 'inch'}"),
+                onChanged: (value) => {
+                  setState(() {
+                    heightInput = value;
+                  })
+                },
+              ),
             ),
             TextButton(onPressed: handlePress, child: Text("Calculate BMI"))
           ],
