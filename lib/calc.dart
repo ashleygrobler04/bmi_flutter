@@ -4,7 +4,7 @@ class Calculate {
 
   double calculateBmi(double weight, double height) {
     this.weight = weight;
-    this.height = height;
+    this.height = height / 100;
     double bmi = this.weight / (this.height * this.height);
     return double.parse(bmi.toStringAsFixed(2));
   }
